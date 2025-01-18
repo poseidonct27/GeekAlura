@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <title>Alura Geek</title>
+</head>
+<body>
+  <header>
+    <img class="logo" src="assets/Logo.svg" alt="">
+  </header>
+  <main>
+    <div class="notification" id="notification"></div>
+    <section class="products">
+      <h1>MIS PRODUCTOS:</h1>
+      <div class="container-products"  id="container-products"></div>
+    </section>
+    <section class="register-products">
+      <h2>AÑADIR PRODUCTOS:</h2>
+      <form class="register-form" id="register-form">
+        <p><input type="text" id="product-name" placeholder="Nombre..."></p>
+        <p><input type="text" id="product-price" placeholder="Precio..."></p>
+        <p><input type="text" id="product-image-url" placeholder="URL da Imagem..."></p>
+        <p><input type="file" id="product-image-file" accept="image/*"></p>
+        <p class="register-buttons">
+          <button type="submit" id="submit-button">Enviar</button>
+          <button type="reset">Limpar</button>
+        </p>
+      </form>
+    </section>
+    <section class="modal-edit" id="modal-edit" style="display: none;">
+      <article class="edit-content">
+        <h2>Editar Produto</h2>
+        <form class="edit-form" id="edit-form">
+          <p><input type="text" id="edit-product-name" placeholder="Nome..."></p>
+          <p><input type="text" id="edit-product-price" placeholder="Valor..."></p>
+          <p><input type="text" id="edit-product-image-url" placeholder="URL da Imagem..."></p>
+          <p><input type="file" id="edit-product-image-file" accept="image/*"></p>
+          <p class="edit-buttons">
+            <button type="submit">Guardar</button>
+            <button type="button" id="modal-close">Cancelar</button>
+          </p>
+        </form>
+      </article>
+    </section>
+    <section class="modal-delete" id="modal-delete" style="display: none;">
+      <div class="delete-content">
+        <h2>Confirmación de eliminación</h2>
+        <p>¿Estás seguro de que deseas eliminar este producto?</p>
+        <button class="confirm-button" id="confirm-delete">Borrar</button>
+        <button class="cancel-button" id="cancel-delete">Cancelar</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Desenvolvido por Jordy Leon</p>
+    <h2>Alura Latan - 2025</h2>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
